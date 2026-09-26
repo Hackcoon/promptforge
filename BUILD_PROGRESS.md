@@ -33,7 +33,7 @@ Date: 2026-09-26. Goal: dense but executable prompt skill + friendly wiki. Finan
 - `IMPLEMENTATION_PLAN.md` (57): v2, some checkboxes stale (templates/trust/examples marked done in edits).
 
 ## Resolved / parked
-- Resolved: CLEAR-prompt (Lo), CLEAR-coaching (Hawkins), RAIN, FLOW, AIM-B (Audience/Input/Method; rivals noted), DRIVER-edu (Zhang Purdue; World Bank DB split out), Visual Descriptor (image adapter), AIM SMART-coaching (iPEC; not scaffold), MESSAGE-house (fortyfivan; local starter).
+- Resolved: CLEAR-prompt (Lo), CLEAR-coaching (Hawkins), RAIN, FLOW, AIM-B (Audience/Input/Method; rivals noted), DRIVER-edu (Zhang Purdue; World Bank DB split out), Visual Descriptor (image adapter), AIM SMART-coaching (iPEC; not scaffold), MESSAGE-house (fortyfivan; local starter), ORACLE (Outcome/Role/Audience/Constraints/Layout/Evidence; single-source, Promising).
 - Parked (do NOT invent): AETHER (tool name only), USC (university confusion), DiCo (training/architectures).
 - Finance app test: MCF+GCT+RGCCOV prompt delivered for opencode/muse-spark; user testing, parked.
 

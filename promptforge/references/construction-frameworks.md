@@ -61,6 +61,7 @@ Source: r/PromptEngineering Catalogue + Master Catalog Phase 1 batch (2025-2026 
 | RAIN [ADD 2026-09] | Role → Aim → Input → Numeric Target (Messingfeld) — bounded measurable output |
 | FLOW [ADD 2026-09] | Function → Level → Output → Win Metric (Messingfeld) — explicit quality bar |
 | AIM-B [ADD 2026-09] | Audience → Input → Method (content-briefing) — rivals: AIM-A Ask/Include/Modify, AIM-TO Assign/Inform/Modify/Task/Output |
+| ORACLE [ADD 2026-09, single-source] | Outcome → Role → Audience → Constraints → Layout → Evidence — outcome-first + evidence slot |
 | 4-Sentence | Context → Problem → Solution → Impact (exactly 4 sentences) |
 | OOF | Organize Output Format — headers/tables/bold anchors |
 | PGTC | Persona → Goal → Task → Context |
@@ -178,6 +179,12 @@ When: business/technical deliverable where quality bar must be explicit. Templat
 
 **34. AIM-B [Research Pass 2026-09] — Audience, Input, Method (content-briefing)**
 When: content feels generic — force brief. Template: `Audience: [who + psychographics + consumption]. Input: [data/quotes/examples/tone/keywords]. Method: [platform/format/length/structure].` Rivals (do NOT merge): AIM-A Ask/Include/Modify (therift.ai loop), AIM-TO Assign/Inform/Modify/Task/Output (meta-prompt), Atlas Insight Method (decision architecture). "AIM SMART" rejected as conflation — keep SMART separate. Example: LinkedIn 1200-char post for ops managers with McKinsey stat + retail example. Anti: input without specifics → generic remains. Combine: inside RGCCOV-O + 1 example.
+
+**35. ORACLE [Research Pass 2026-09, single-source: user-supplied proprietary] — Outcome, Role, Audience, Constraints, Layout, Evidence**
+When: structured high-quality brief where outcome-first + evidence grounding both matter. Why distinct: Outcome before Role (model selects expertise for goal, like ORCA) + Evidence slot (RAF-friendly: sources the answer must stand on) + Layout (format lock). Neighbors: CO-STAR (adds Style/Tone, no Evidence), RACE (ends Expectation, no Audience/Evidence), RGCCOV (superset — O≈Goal, L≈Output, E≈Verification grounding).
+Template: `Outcome: [what success looks like + beneficiary]. Role: [expert]. Audience: [reader level]. Constraints: [must/never]. Layout: [sections/shape/length]. Evidence: [sources/data to use, [uncertain] if gap].`
+Example: `Outcome: board-ready chipset comparison for CTO. Role: hardware analyst. Audience: exec, non-technical. Constraints: <300w, no jargon, table required. Layout: verdict + table + risks. Evidence: [pasted spec sheets] only.`
+Anti: evidence listed but not pasted → wishful grounding; use RAF rule. Combine: wrap in TEOF tier + OEF judge. Confidence: Promising (one source, no independent corroboration found — ORCA 4-part and Oracle-vendor guides are different things; upgrade to Strong on second source).
 
 Fill-in rule: pick one that matches missing info, fill with concrete content. Never stack >2. Wrap in RGCCOV-V + TEOF tier.
 

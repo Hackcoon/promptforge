@@ -2,6 +2,10 @@
 
 Keep-a-changelog style. Only user-facing changes (new frameworks, router/output changes, new refs). Fix typo-level edits unlisted.
 
+## [Unreleased]
+### Added
+- ORACLE scaffold (Outcome/Role/Audience/Constraints/Layout/Evidence, single-source, Promising) in construction-frameworks.
+
 ## [1.1.0] — 2026-09-26
 ### Added
 - System gaps closed: Mode auto-label + assumptions line (Workflow + Contract header), Optimizer micro-diff (Kept/Fixed/Added).
