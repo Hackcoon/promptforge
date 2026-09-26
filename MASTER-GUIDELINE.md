@@ -96,7 +96,7 @@ Best system = one you'll actually use. Starter: `You are [role]. [Goal] for [aud
 ### 👥 Context/Audience-first family
 - **🏆 CO-STAR — Context, Objective, Style, Tone, Audience, Response:** Winner of Singapore GPT-4 contest! When reader shapes answer. *Context: sales -12%. Objective: explain. Audience: non-tech execs. Response: 4 sentences + table.*
 - **🧭 TRACI — Task, Role, Audience, Context, Intent:** Boundary lock. Who speaks to whom and why.
-- **📝 TRACE — Task, Request, Action, Context, Example:** Action + example combo.
+- **📝 TRACE — Task, Request, Action, Context, Example:** → alias of RACE + 1 example.
 - **💛 CARE — Context, Action, Result, Example:** Mini case studies. *Checkout drop 30% → one-page form → +12% in 3 wks.*
 - **💡 IDEA — Intent, Details, Expectation, Audience:** Intent-led briefs.
 - **📦 ICIO — Instruction, Context, Input, Output:** Data in → shaped out. MUST paste input or it will invent!
@@ -105,10 +105,10 @@ Best system = one you'll actually use. Starter: `You are [role]. [Goal] for [aud
 - **🏷️ TAG — Task, Action, Goal:** Ultra-minimal ops.
 - **⛓️ GCT — Goal, Constraints, Timeline:** Must bound! Use MUST / NEVER. *Goal: ship onboarding. Constraints: must SSO, never billing. Timeline: Fri→Mon→Wed.*
 - **🔧 PAR — Problem, Action, Result:** Default fix story.
-- **🙏 PRO — Problem, Request, Outcome:** Ask variant.
+- **🙏 PRO — Problem, Request, Outcome:** → alias of PAR (Request→Action, Outcome→Result).
 - **⭐ STAR — Situation, Task, Action, Result:** Interview stories, evidence-based.
-- **🎬 STAGE — Situation, Task, Action, Goal, Expectation:** STAR + future standard.
-- **🦍 APE-task — Action, Purpose, Expectation:** 1-liner. (Not the optimizer APE in Phase 4!)
+- **🎬 STAGE — Situation, Task, Action, Goal, Expectation:** → alias of STAR (+GCT for forward expectation).
+- **🦍 APE-task — Action, Purpose, Expectation:** → alias of TAG (+Expectation line). (Not the optimizer APE in Phase 4!)
 - **🌉 BAB — Before, After, Bridge:** Persuasion. Bridge must be real mechanism!
 - **💧 DRIP — Do, Result, Instructions, Parameters:** Parameterized jobs.
 - **🌊 COAST — Context, Objective, Actions, Scenario, Task:** Scenario planning. Pair with Cascade!

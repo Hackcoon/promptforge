@@ -34,6 +34,7 @@ Date: 2026-09-26 (synced). v1.2.0 on GitHub main (gate 20/20). Finance 6-mode te
 
 ## Resolved / parked
 - Resolved: CLEAR-prompt (Lo), CLEAR-coaching (Hawkins), RAIN, FLOW, AIM-B (Audience/Input/Method; rivals noted), DRIVER-edu (Zhang Purdue; World Bank DB split out), Visual Descriptor (image adapter), AIM SMART-coaching (iPEC; not scaffold), MESSAGE-house (fortyfivan; local starter), ORACLE (single-source, Promising), RISE (Strong working), ROSES-B rival, CREO 3 variants, RESEE (single-source, Promising).
+- Prune 2026-09: PRO→PAR, STAGE→STAR, TRACE→RACE, APE-task→TAG, RTCO→Five-layer (aliases, 0 deletions). 38 → 33 canonical.
 - Parked (do NOT invent): AETHER (tool name only), USC (university confusion), DiCo (training/architectures).
 - Finance app test: MCF+GCT+RGCCOV prompt delivered for opencode/muse-spark; user testing, parked.
 

@@ -39,7 +39,7 @@ Source: r/PromptEngineering Catalogue + Master Catalog Phase 1 batch (2025-2026 
 | PEEL | Persona → Environment → Emotion → Language |
 | ROSES | Role → Objective → Steps → Examples → Style/Senses |
 | TAG | Task → Action → Goal |
-| RTCO | Role → Task → Context → Output |
+| RTCO (alias → Five-layer) | Role → Task → Context → Output (covered by Five-layer + Output wording) |
 | TRACI | Task → Role → Audience → Context → Intent |
 | TRACE | Task → Request → Action → Context → Example |
 | CARE | Context → Action → Result → Example |
@@ -71,7 +71,7 @@ Source: r/PromptEngineering Catalogue + Master Catalog Phase 1 batch (2025-2026 
 
 Selection hint: Quick → RTF, Role+Goal. Audience-sensitive → CO-STAR, CRAFTS, PAST. Heavily constrained → RAPTOR, P-C-R-I-V, CWCS, KERNEL, RISEN.
 
-## Phase 1 Dense Entries — All 31 (When + Template + Example + Anti-pattern)
+## Phase 1 Dense Entries — All 38 (When + Template + Example + Anti-pattern)
 
 ### Role/Persona-first (8)
 
@@ -110,6 +110,7 @@ When: boundary lock. Template: `Task:[ ]. Role:[ ]. Audience:[level+needs]. Cont
 
 **11. TRACE — Task, Request, Action, Context, Example**
 When: action + example needed. Template: `Task:[ ]. Request:[ ]. Action:[steps]. Context:[ ]. Example:[ ].` Example: `Task: refund policy rewrite. Request: shorten to 100 words. Action: keep eligibility+window. Context: DTC store. Example: [old→new].` Anti: request+action duplicated → bloat; keep once. Combine: + OEF length check.
+Alias [prune 2026-09]: filed under **RACE** — use RACE slots + 1 example (Request→Action wording fits).
 
 **12. CARE — Context, Action, Result, Example**
 When: case/testimonial/mini-story. Template: `Context:[friction]. Action:[mechanism]. Result:[measured]. Example:[snippet].` (Emotion variant for testimonials: swap Example→Emotion.) Example: `Context: checkout drop 30%. Action: one-page form. Result: +12% conversion in 3 wks. Example: [before/after].` Anti: result without measure → story, not proof. Combine: → PAR to narrate fix.
@@ -133,15 +134,18 @@ When: friction→fix narrative. Template: `Problem:[friction]. Action:[mechanism
 
 **18. PRO — Problem, Request, Outcome**
 When: ask-oriented variant of PAR. Template: `Problem:[ ]. Request:[explicit ask]. Outcome:[what good looks like].` Example: `Problem: churn +20% in Y since Mar. Request: diagnose mechanism. Outcome: ranked hypotheses + discriminating test.` Anti: request buries verb → replace with precise operation. Combine: + QEF before if vague.
+Alias [prune 2026-09]: filed under **PAR** — use PAR slots (Request→Action, Outcome→Result).
 
 **19. STAR — Situation, Task, Action, Result (interview)**
 When: behavioral evidence. Template: `Situation:[ ]. Task:[ ]. Action:[you did]. Result:[measured].` Example: `Situation: Black Fri outage. Task: own incident. Action: feature-flag rollback. Result: MTTR 40→8 min.` Anti: team action as own → unverifiable. Combine: + RAF cite sources.
 
 **20. STAGE — Situation, Task, Action, Goal, Expectation**
 When: STAR + forward expectation. Template: `Situation/Task/Action as STAR. Goal:[ ]. Expectation:[standard].` Example: STAR + `Goal: zero repeat. Expectation: runbook + alert <5min.` Anti: expectation = goal repeat → merge. Combine: + HILCS if irreversible.
+Alias [prune 2026-09]: filed under **STAR** — forward expectation covered by STAR + GCT.
 
 **21. APE-task — Action, Purpose, Expectation (NOT Phase 4 APE optimizer)**
 When: ultra-short. Template: `Action:[ ]. Purpose:[ ]. Expectation:[ ].` Example: `Action: draft changelog. Purpose: inform users. Expectation: 5 bullets, <100 words.` Anti: confuse with APE optimizer; label APE-task. Combine: EFF starter.
+Alias [prune 2026-09]: filed under **TAG** — use TAG slots + Expectation line (also kills the Phase-4 name collision).
 
 **22. BAB — Before, After, Bridge**
 When: persuasion/transformation. Template: `Before:[pain]. After:[desired]. Bridge:[how].` Example: `Before: manual reports 4h. After: auto 10min. Bridge: script + cron.` Anti: bridge = “AI will help” → no mechanism. Combine: + PAS/AIDA from applied-frameworks if copy.
@@ -206,15 +210,15 @@ Fill-in rule: pick one that matches missing info, fill with concrete content. Ne
 
 ## When to pick which (detail)
 
-- **RTF / R.C.T.F. / Five-layer / Role-Task-Context-Constraints-Output:** default fast builders. Five-layer safest generic after RGCCOV.
-- **RACE / TAG / RTCO:** action-oriented, expectations explicit. Ops/briefs/handoffs.
+- **RTF / R.C.T.F. / Five-layer / Role-Task-Context-Constraints-Output:** default fast builders (brevity ladder 3→4→5 slots). Five-layer safest generic after RGCCOV.
+- **RACE / TAG:** action-oriented, expectations explicit. Ops/briefs/handoffs. (RTCO → Five-layer, PRO → PAR, TRACE → RACE+example, APE-task → TAG+Expectation — see alias notes.)
 - **CO-STAR / CRAFTS / PAST / ASPECT:** audience+tone+style matter. CO-STAR strongest when shape depends on reader.
 - **RAPTOR / P-C-R-I-V / CWCS / KERNEL:** heavily constrained/verifiable. RAPTOR+Review; P-C-R-I-V+Validation; CWCS+Success; KERNEL simplicity+repro.
 - **RISEN / RODES:** multi-step process control. RISEN process, RODES examples.
 - **MAGIC / Universal / GIST-first / Ten-component:** meta-builders. GIST messy→refine→build. Universal self-check. Ten-component max explicit (token heavy).
 - **Spine / Modules / INSPIRE / Master:** system instructions/agents.
 - **TRACE/CARE/IDEA/ICIO:** data/example/audience variants — prefer ICIO when pasting data (RAF), CARE for cases, IDEA for intent briefs.
-- **PAR/PRO/STAR/STAGE/BAB/DRIP/COAST/AIDA:** narrative/goal/scenario/copy — PAR default fix story, STAR evidence, BAB persuasion, AIDA copy, COAST scenario.
+- **PAR/STAR/BAB/DRIP/COAST/AIDA:** narrative/goal/scenario/copy — PAR default fix story (PRO aliased in), STAR evidence (STAGE aliased in), BAB persuasion, AIDA copy, COAST scenario.
 - **CLEAR/SMART/CREATE/4-Sentence/OOF/PGTC:** quality/style/output locks — CLEAR gate, SMART goals, 4-Sentence exec, OOF scannability, PGTC minimal.
 
 ## Fill-in starters (copy-paste)

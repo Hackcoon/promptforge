@@ -7,6 +7,7 @@ Gate: router-tests 20/20 PASS (bar 18/20).
 ### Added
 - ORACLE scaffold (Outcome/Role/Audience/Constraints/Layout/Evidence, single-source, Promising) in construction-frameworks.
 - RISE (Role/Input/Steps/Expectation, Strong working) + ROSES-B rival variant (Scenario/Expected Solution) + CREO 3 variants (Execution/Request/Evidence) + RESEE (single-source, Promising).
+- Prune pass: PRO→PAR, STAGE→STAR, TRACE→RACE, APE-task→TAG, RTCO→Five-layer (aliases, 0 deletions); header fixed 31→38.
 
 ## [1.1.0] — 2026-09-26
 ### Added
