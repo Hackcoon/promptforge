@@ -1,6 +1,6 @@
 ---
 name: promptforge
-version: 1.1.0
+version: 1.2.0
 description: Prompt framework engineer that diagnoses intent and builds, fixes, and evaluates prompts using RGCCOV, CAF, MCF, HILCS, QEF, OEF, EFF, RAF, TEOF, 30+ construction frameworks, reasoning methods, Framework Compass and Cascade Engine. Use when user wants better prompts, framework selection, or prompt review.
 ---
 

@@ -1,6 +1,6 @@
-# Build Progress — Prompt Framework Engineer Skill (continue-later context)
+# Build Progress — PromptForge Skill (continue-later context)
 
-Date: 2026-09-26. Goal: dense but executable prompt skill + friendly wiki. Finance app parked; legal-adapter parked for later return.
+Date: 2026-09-26 (synced). v1.2.0 on GitHub main (gate 20/20). Finance 6-mode test run passed. Legal-adapter parked for later return.
 
 ## Decisions (don't re-litigate without reason)
 - Core = Immutable 6 [RGCCOV, CAF, QEF, OEF, RAF, TEOF] + Situational 3 [MCF=Build, HILCS=High-Stakes, EFF=Fast guardrail]. First-class: Research Pass, Cascade, Phase-2 verifier, Phase-4 optimizer.
@@ -37,13 +37,14 @@ Date: 2026-09-26. Goal: dense but executable prompt skill + friendly wiki. Finan
 - Parked (do NOT invent): AETHER (tool name only), USC (university confusion), DiCo (training/architectures).
 - Finance app test: MCF+GCT+RGCCOV prompt delivered for opencode/muse-spark; user testing, parked.
 
-## To continue (highest value first)
-1. **Applied locks:** PAS/FAB/GOAT/ABT/SPARC full templates + signals into Construction Library (plan Phase 5).
-2. **3 pickers (1 page each):** DRIVER vs MCF; GROW vs CLEAR-Coaching vs AIM SMART; RAIN vs GCT vs SMART.
-3. **Eval harness + optimizer starter:** validation-set template + metric library + DSPy/OPRO starter (Phase 4 real).
-4. **Governance:** semver + changelog + prune rule; refresh IMPLEMENTATION_PLAN checkboxes.
-5. **Test run all phases** (user said later): pick 1 prompt per mode and run full Output Contract.
-6. **Legal-adapter return** (user said later): pre-send checklist + province-specific limitation tables.
+## To continue (highest value first) — refreshed
+1. **Stamp v1.2.0:** Unreleased is release-worthy (ORACLE + RISE/CREO/RESEE/ROSES-B + README + action-first default + humanize + pickers + T9). Run router-tests gate (18/20) first, then bump + push.
+2. **Prune analysis:** overlap audit + alias calls (RACE/TAG/RTCO, COAST/TRACI, STAR/STAGE, RISEN/RISE…) — biggest bloat threat.
+3. **Tool coverage matrix:** which templates tested where (opencode ✅, rest unverified).
+4. **Wiki refresh:** MASTER-GUIDELINE missing newer adds (ORACLE, RISE, CREO, RESEE, T9, pickers, humanize, action-first, legal note).
+5. **Contribution template:** pre-formatted intake for future content drops.
+6. **Legal-adapter return** (user said later): pre-send checklist + province tables.
+7. **Parked:** AETHER, USC, DiCo (drop USC/DiCo? user call). Finance app (user testing).
 
 ## How to resume
 1. Read this file, then `SKILL.md` router + Output Contract, then the ref you're touching.

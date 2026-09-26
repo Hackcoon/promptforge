@@ -1,6 +1,6 @@
-# Implementation Plan — Prompt Framework Engineer + Master Guideline (v2)
+# Implementation Plan — PromptForge + Master Guideline (v3, synced)
 
-Where we are, what's missing, and what to build next. MESSAGE starter kept functional-minimal per your call.
+Where we are, what's missing, and what to build next. System gaps all closed. v1.1.0 shipped; Unreleased holds ORACLE + RISE batch + README + style defaults.
 
 ## 0. Current state (done)
 - `SKILL.md` (~372 lines): Immutable 6 + Situational 3 + Modes [Fast/Deep/Build/High-Stakes] + Suggested-frameworks-first Output Contract (new) + Research Pass + Cascade.
@@ -16,11 +16,11 @@ Where we are, what's missing, and what to build next. MESSAGE starter kept funct
 **Biggest leverage left (in order):**
 1. **Templates library: DONE** `references/templates-library.md` (T1-T8 + decompiler), wired into creator-optimizer.
 2. **Trust blocks: DONE** `verification-systems.md` expanded (tiers, grounding, cite tiers, CoV, code verify, hygiene, handoff, red-flags, budget).
-3. **Applied locks:** PAS/FAB/GOAT/ABT/SPARC + RAIN/FLOW/AIM-B signals with good/bad examples. Daily value for writing/coding tasks.
-4. **Examples library: DONE** 20 weak→strong (`references/examples-library.md`).
-5. **Pickers (kill confusion):** DRIVER-edu vs MCF (transfer vs delivery), GROW vs CLEAR-Coaching vs AIM SMART, RAIN vs GCT vs SMART. One page each.
-6. **Eval/Optimizer real:** validation-set template + metric library (binary/OEF/grounding) + DSPy/OPRO starter — else Phase 4 stays theory.
-7. **Governance:** semver + changelog + prune rule; parked AETHER/USC/DiCo → drop or keep parked (recommend drop USC/DiCo, keep AETHER only if you supply source).
+3. **Applied locks: DONE** PAS/FAB/GOAT/ABT/AIDA/SPARC + spec-and-test + One-Page Brief + signal cheat.
+4. **Examples library: DONE** 20 weak→strong + anti-library top 10.
+5. **Pickers: DONE** (`references/pickers.md`).
+6. **Eval/Optimizer real: DONE** (`eval-harness.md` + `optimizer-starter.md` + pointers).
+7. **Governance: DONE** (1.0.0 → 1.1.0, CHANGELOG, prune rule, router-tests gate). Next stamp v1.2.0 pending gate run.
 
 **System gaps (how skill behaves):**
 - [x] Suggested-frameworks-first (Output Contract item 0).
@@ -35,19 +35,18 @@ Where we are, what's missing, and what to build next. MESSAGE starter kept funct
 - PAS/AIDA/FAB/GOAT/ABT/SPARC + spec-and-test templates with good/bad + signal cheat in `applied-frameworks.md`.
 - RAIN/FLOW/AIM-B signals wired in Construction Library hint.
 
-### Phase 6 — Trust blocks
-- reClaim, token budget, carry-forward, red-flag OEF. Accept: High-Stakes without source/exec/human fails closed.
+### Phase 6 — Trust blocks — DONE
+- tiers, grounding, cite tiers, CoV, code verify, hygiene, handoff, red-flag OEF, budget. High-Stakes without source/exec/human fails closed.
 
-### Phase 7 — Suggest + Intake (you asked)
-- [x] Output Contract 0: Suggested frameworks table (Use/Skip + why).
-- [ ] Add Mode line + assumptions line to every build.
-- [x] Examples library 20 weak→strong with mode + framework choice shown (`references/examples-library.md`).
+### Phase 7 — Suggest + Intake — DONE
+- [x] Output Contract 0: Suggested frameworks + Mode label + Assumptions line.
+- [x] Optimizer micro-diff. Examples library + anti-library.
 
-### Phase 8 — Eval/Optimizer (later)
-- eval-harness + optimizer-starter (DSPy/OPRO). Demo before/after scores.
+### Phase 8 — Eval/Optimizer — DONE
+- eval-harness + optimizer-starter (DSPy/OPRO/Evo + interactive ask-loop). Next: demo before/after scores on one real task.
 
-### Phase 9 — Governance
-- Version, deprecate aliases, quarterly prune. AETHER/USC/DiCo stay parked until you supply primary source.
+### Phase 9 — Governance — DONE (1.1.0)
+- Version, CHANGELOG, prune rule, router-tests gate (run before minor bumps), parked list. Next stamp v1.2.0.
 
 ## 3. How suggest-frameworks works now
 Every prompt answer opens with:

@@ -78,7 +78,7 @@ Best system = one you'll actually use. Starter: `You are [role]. [Goal] for [aud
 
 ---
 
-## 🧰 Phase 1 — The Blueprint Bricks (34 acronyms!)
+## 🧰 Phase 1 — The Blueprint Bricks (38 acronyms!)
 
 😌 Don't memorize. These are grocery lists. Pick the list that matches what's missing.
 
@@ -90,7 +90,8 @@ Best system = one you'll actually use. Starter: `You are [role]. [Goal] for [aud
 - **🔎 RODES — Role, Objective, Details, Examples, Sense-check:** When examples matter + need self-check.
 - **🎨 CRISPE — Capacity, Insight, Statement, Personality, Experiment:** Creative with voice control.
 - **💬 PEEL — Persona, Environment, Emotion, Language:** Tone-sensitive messages. *Empathetic manager, Slack to tired team, calm, plain <80w.*
-- **🌹 ROSES — Role, Objective, Steps, Examples, Style:** How-to guides with style.
+- **🌹 ROSES — Role, Objective, Steps, Examples, Style:** How-to guides with style. (Twin **ROSES-B**: Scenario + Expected Solution instead — for case-study reasoning. Pick by signal!)
+- **📖 RISE — Role, Input, Steps, Expectation:** Tutorials where output step order matters. Sister of RISEN (which is process + end-goal).
 
 ### 👥 Context/Audience-first family
 - **🏆 CO-STAR — Context, Objective, Style, Tone, Audience, Response:** Winner of Singapore GPT-4 contest! When reader shapes answer. *Context: sales -12%. Objective: explain. Audience: non-tech execs. Response: 4 sentences + table.*
@@ -112,6 +113,9 @@ Best system = one you'll actually use. Starter: `You are [role]. [Goal] for [aud
 - **💧 DRIP — Do, Result, Instructions, Parameters:** Parameterized jobs.
 - **🌊 COAST — Context, Objective, Actions, Scenario, Task:** Scenario planning. Pair with Cascade!
 - **📢 AIDA — Attention, Interest, Desire, Action:** Marketing copy formula.
+- **🎬 CREO — Context, Role, Execution, Output:** Structured technical/analytical briefs. (Twins: Request/Explanation/Outcome variant, Evidence variant for healthcare/legal — state which!)
+- **🎭 RESEE — Role, Environment, Situation, Expectation, Examples:** Simulations and roleplay — Environment + Situation split beats plain Context.
+- **🔮 ORACLE — Outcome, Role, Audience, Constraints, Layout, Evidence:** Analyst briefs — outcome-first plus an evidence lock. Single-source, still proving itself.
 
 ### 💎 Quality checklists + New bounded friends ✨
 - **✅ CLEAR — Concise, Logical, Explicit, Adaptive, Reflective:** Peer-reviewed (Dr. Leo Lo 2023)! Use as quality gate.
@@ -123,8 +127,9 @@ Best system = one you'll actually use. Starter: `You are [role]. [Goal] for [aud
 - **🌧️ RAIN — Role, Aim, Input, Numeric Target:** When you need exactly N things! *Role: analyst. Aim: diagnose drop. Input: [data]. Numeric: top 5 causes.* Stops rambling.
 - **🌊 FLOW — Function, Level, Output, Win Metric:** Define what great looks like! *Win: CFO can present in 5 min.* For business-critical docs.
 - **🎯 AIM-B — Audience, Input, Method:** Anti-generic content brief! *Audience: ops managers. Input: stats + example. Method: LinkedIn 1200 chars.* (Rivals: other AIMs — don't mix! Coaching AIM SMART [Acceptable/Ideal/Middle + SMART step] lives in Applied for goals/habits only — not a general scaffold.)
+- **📄 T9 One-Page Brief — Bottom line → Why matters → Findings → Decisions → Open questions:** Report compressor. Rule: no decision change = cut. Numbers exact, gaps flagged.
 
-> 🧠 Pro tip: If user names one (e.g. "use CO-STAR"), honor it! Wrap it in RGCCOV Verification + TEOF tier to stay safe. Never stack >2.
+> 🧠 Pro tip: If user names one (e.g. "use CO-STAR"), honor it! Wrap it in RGCCOV Verification + TEOF tier to stay safe. Never stack >2. Stuck between lookalikes? See pickers: RAIN/GCT/SMART, MCF/DRIVER, GROW/CLEAR/AIM SMART.
 
 ---
 
@@ -214,6 +219,8 @@ Quick (fact) → Targeted (decision) → Full (strategic, costly if wrong). Alwa
 - **💻 Coding agents (Code/Cursor/Copilot):** File scope, start→target, allowed/forbidden, stop conditions, `Done when:` + verify command.
 - **🎨 Generators (image/video):** Lock stack/style, what NOT to build, boundaries. Prevent bloat! Use 🖼️ Visual Descriptor: comma descriptors, lighting/mood early, palette + composition, aspect lock (`--ar 16:9`), negative (`--no text,watermark`).
 
+**Style passes (say the word):** `adhd this` → action-first rewrite (action first, numbered steps, one next step, ≤5 lists). `humanize this` → naturalness polish (keeps facts/voice, never invents). Both optional extras, never default — except action-first is default-on for CLI/coding answers.
+
 ---
 
 ## ✅ Quality bar before you hit enter
@@ -255,6 +262,7 @@ Mode maps (follow arrows, stop at ✅):
 **Why did it hallucinate?** No pasted data + no `[uncertain]` rule. Add RAF grounding.
 **Why did the agent loop?** No scope + no stop + no `Done when:`. Add all three (T3).
 **Do I need legal-adapter?** Only for legal tasks — then High-Stakes + adapter, lawyer signs off.
+**`adhd this` vs `humanize this`?** ADHD = shorter/sharper structure. Humanize = natural voice. Structure first, sound last.
 
 ---
 

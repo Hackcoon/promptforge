@@ -2,7 +2,8 @@
 
 Keep-a-changelog style. Only user-facing changes (new frameworks, router/output changes, new refs). Fix typo-level edits unlisted.
 
-## [Unreleased]
+## [1.2.0] — 2026-09-26
+Gate: router-tests 20/20 PASS (bar 18/20).
 ### Added
 - ORACLE scaffold (Outcome/Role/Audience/Constraints/Layout/Evidence, single-source, Promising) in construction-frameworks.
 - RISE (Role/Input/Steps/Expectation, Strong working) + ROSES-B rival variant (Scenario/Expected Solution) + CREO 3 variants (Execution/Request/Evidence) + RESEE (single-source, Promising).
@@ -15,6 +16,7 @@ Keep-a-changelog style. Only user-facing changes (new frameworks, router/output 
 - Trust evidence: 20-intent router test set (pass 18/20 gate), 6-mode finance test run (6/6 pass), anti-library top 10.
 - Wiki: 5-min quickstart + FAQ + mode maps. Legal adapter Canada-hardened.
 - Renamed skill `prompt-framework-engineer` → `promptforge` (repo slug matches).
+- Wiki refresh: 38 acronyms (ORACLE/RISE/CREO/RESEE/ROSES-B/T9), pickers pointer, style passes, FAQ additions.
 ### Proof
 - Finance-app test run: Fast/Deep/Build/High-Stakes/Creator/Optimizer, 6/6 contract checks pass.
 

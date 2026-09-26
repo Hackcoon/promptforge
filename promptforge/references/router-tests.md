@@ -26,3 +26,6 @@ How: feed each intent, check Mode + primary framework match. Pass = 18/20. Failu
 | 20 | "which framework for legal?" | 🚨 High | legal-adapter + HILCS |
 
 Also negative checks: simple lookup must NOT route MCF/HILCS/Research; High-Stakes must NEVER route EFF-only.
+
+## Run history
+- 2026-09-26 (v1.2.0 gate): 20/20 pass (notes: #12 mode borderline Deep/High, framework correct; #19 resolves via coaching picker by design). Negatives hold. Gate: PASS (bar 18/20).
