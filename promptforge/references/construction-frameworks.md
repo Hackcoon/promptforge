@@ -62,6 +62,9 @@ Source: r/PromptEngineering Catalogue + Master Catalog Phase 1 batch (2025-2026 
 | FLOW [ADD 2026-09] | Function → Level → Output → Win Metric (Messingfeld) — explicit quality bar |
 | AIM-B [ADD 2026-09] | Audience → Input → Method (content-briefing) — rivals: AIM-A Ask/Include/Modify, AIM-TO Assign/Inform/Modify/Task/Output |
 | ORACLE [ADD 2026-09, single-source] | Outcome → Role → Audience → Constraints → Layout → Evidence — outcome-first + evidence slot |
+| RISE [ADD 2026-09] | Role → Input → Steps → Expectation (Messingfeld) — tutorial/procedural content |
+| CREO [ADD 2026-09, 3 variants] | User variant: Context → Role → Execution → Output — rivals: Request/Explanation/Outcome (fvivas), Role/Evidence/Output (healthcare/legal) |
+| RESEE [ADD 2026-09, single-source] | Role → Environment → Situation → Expectation → Examples — simulation/roleplay |
 | 4-Sentence | Context → Problem → Solution → Impact (exactly 4 sentences) |
 | OOF | Organize Output Format — headers/tables/bold anchors |
 | PGTC | Persona → Goal → Task → Context |
@@ -93,8 +96,9 @@ When: creative/exploratory with voice control. Template: `Capacity:[role]. Insig
 **7. PEEL — Persona, Environment, Emotion, Language**
 When: tone-sensitive comms. Template: `Persona:[ ]. Environment:[where read]. Emotion:[feel]. Language:[level/style].` Example: `Persona: empathetic manager. Environment: Slack to tired eng. Emotion: calm ownership. Language: plain, <80 words.` Anti: emotion without constraint → purple prose. Combine: + CO-STAR if audience complex.
 
-**8. ROSES — Role, Objective, Steps, Examples, Style/Senses**
+**8. ROSES — Role, Objective, Steps, Examples, Style/Senses (variant A, style-guide batch)**
 When: instructional content needing style lock. Template: `Role:[ ]. Objective:[ ]. Steps:[ ]. Examples:[ ]. Style:[tone/sensory].` Example: `Role: chef instructor. Objective: teach knife skills. Steps: grip, cut, store. Examples: demo onion dice. Style: encouraging, tactile.` Anti: style without steps → vague. Combine: + OOF headers.
+**Rival ROSES-B [Research Pass 2026-09]: Role, Objective, Scenario, Expected Solution, Steps** (workshop/Medium comparative article). When: complex problem-solving / case-study requests — scenario grounds it, Expected Solution sets target shape, Steps decompose. Template: `Role:[ ]. Objective:[ ]. Scenario:[ ]. Expected Solution:[shape]. Steps:[1..N].` Use B for case-study reasoning, A for styled instruction. Do NOT merge — pick by signal.
 
 ### Context/Audience-first (6)
 
@@ -186,6 +190,18 @@ Template: `Outcome: [what success looks like + beneficiary]. Role: [expert]. Aud
 Example: `Outcome: board-ready chipset comparison for CTO. Role: hardware analyst. Audience: exec, non-technical. Constraints: <300w, no jargon, table required. Layout: verdict + table + risks. Evidence: [pasted spec sheets] only.`
 Anti: evidence listed but not pasted → wishful grounding; use RAF rule. Combine: wrap in TEOF tier + OEF judge. Confidence: Promising (one source, no independent corroboration found — ORCA 4-part and Oracle-vendor guides are different things; upgrade to Strong on second source).
 
+**36. RISE [Research Pass 2026-09] — Role, Input, Steps, Expectation (Messingfeld, promptedit.app; Medium comparative corroborates Input+Steps focus)**
+When: multi-step procedural/tutorial content where order matters — how-tos, onboarding, training, recipes. Why distinct from RISEN: RISE's Steps prescribe the *output's* step structure (N steps, contents per step), RISEN's Steps are the *process* to follow + End-goal/Narrowing. Template: `Role: [expert]. Input: [topic/material/audience]. Steps: [N steps, contents each, ordering]. Expectation: [tone/length/audience/quality].` Example: `Role: chef instructor. Input: vinaigrette for home cook learning technique. Steps: 4 steps, why+how each. Expectation: friendly, ~300w, troubleshooting tip.` Anti: steps describing task not output shape → use RISEN instead. Combine: + OOF. Confidence: Strong working (dedicated template page + examples + independent corroboration).
+
+**37. CREO [Research Pass 2026-09, 3 rival variants — pick by signal, never merge]**
+- **CREO-Execution (user variant): Context, Role, Execution, Output.** When: structured technical/analytical tasks. Template: `Context:[ ]. Role:[ ]. Execution:[procedure]. Output:[shape].`
+- **CREO-Request (fvivas 2025, EN/ES/PT pages): Context, Request, Explanation, Outcome.** When: grounded responses from first command; Explanation refines requirements, Outcome sets deliverable.
+- **CREO-Evidence (healthcare/legal lit): Context, Role, Evidence, Output.** When: accuracy-critical domains — Evidence slot forces provided sources, kills hallucination (RAF-native).
+Confidence: Promising (multiple real sources, divergent letters — flag variant letter when using).
+
+**38. RESEE [Research Pass 2026-09, single-source: user-supplied; LinkedIn corroborates name, mangles letters] — Role, Environment, Situation, Expectation, Examples**
+When: deep simulations, roleplay, scenario modeling. Why distinct: Environment (where/world-rules) + Situation (what's happening) split — PEEL-adjacent, richer than Context alone. Template: `Role:[ ]. Environment:[world/rules]. Situation:[current state]. Expectation:[outcome shape]. Examples:[1-2].` Anti: environment = situation restated → merge into Context, use RACE instead. Combine: + GoT for branching scenarios. Confidence: Promising (coherent + fits family, one clean source).
+
 Fill-in rule: pick one that matches missing info, fill with concrete content. Never stack >2. Wrap in RGCCOV-V + TEOF tier.
 
 ## When to pick which (detail)
@@ -218,6 +234,9 @@ Fill-in rule: pick one that matches missing info, fill with concrete content. Ne
 - ICIO: `Instruction:[ ]. Context:[ ]. Input:[paste]. Output:[shape].`
 - CLEAR: `Concise <[N]w, Logical [structure], Explicit [owners], Adaptive [audience], Reflective [assumptions].`
 - SMART: `Specific [ ]. Measurable [metric+source]. Achievable [with]. Relevant [to]. By [date].`
+- RISE: `Role: [expert]. Input: [material/audience]. Steps: [N steps + contents]. Expectation: [tone/length/quality].`
+- CREO: `Context:[ ]. Role/Request:[ ]. Execution/Explanation:[ ]. Output/Outcome:[ ]. (state variant letter)`
+- RESEE: `Role:[ ]. Environment:[world]. Situation:[state]. Expectation:[shape]. Examples:[ ].`
 
 Wrap any inside RGCCOV Verification + TEOF tier before shipping.
 

@@ -5,6 +5,7 @@ Keep-a-changelog style. Only user-facing changes (new frameworks, router/output 
 ## [Unreleased]
 ### Added
 - ORACLE scaffold (Outcome/Role/Audience/Constraints/Layout/Evidence, single-source, Promising) in construction-frameworks.
+- RISE (Role/Input/Steps/Expectation, Strong working) + ROSES-B rival variant (Scenario/Expected Solution) + CREO 3 variants (Execution/Request/Evidence) + RESEE (single-source, Promising).
 
 ## [1.1.0] — 2026-09-26
 ### Added
