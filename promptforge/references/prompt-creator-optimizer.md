@@ -12,6 +12,7 @@ Two jobs, one pipeline. Creator = rough idea → sharp prompt. Optimizer = weak 
 
 ## 9-dim intake (silent, ask only if critical + unsafe to assume)
 Task (precise verb) | Tool | Output shape/length | Constraints must/never | Input pasted? | Context/history | Audience/level | Success pass-fail | Examples (if format-critical). Missing tool/output/constraints on complex tasks → ask.
+Follow-up rule (Gemini-inspired): definitive task (fact, fix, transform with all inputs) → zero questions, just build. Broad/ambiguous/advisory → ask (≤3), one sharp round, then build.
 Optional extras: `user-profile-pack.md` (session personalization) — offer, never default. `humanize.md` (naturalness polish) — only when user asks to humanize; honest polish, never for misrepresenting authorship. `action-first-output.md` (concise/action-first style) — on for CLI answers, offer for chat.
 
 ## Mode A — Creator (from rough idea)

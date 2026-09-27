@@ -28,7 +28,7 @@ Date: 2026-09-26 (synced). v1.2.0 on GitHub main (gate 20/20). Finance 6-mode te
 - `references/humanize.md` (expanded): naturalness polish on ask only (25 tells with before→after, voice match, never invent, no deception use).
 - `references/action-first-output.md` (new, default-on for CLI/coding via EFF): concise/action-first style (10 rules condensed).
 - `references/legal-adapter.md` (31): CA/US/AU 1-pager, Canada-hardened (bijural, societies, PIPEDA/Law 25, court disclosure). RETURN LATER per user.
-- `references/agentic-patterns.md` (17), `prompt-optimization.md` (32, +harness/starter pointers), `eval-harness.md` (new), `optimizer-starter.md` (new, incl. interactive ask-loop), `anti-library.md` (new, top 10 failures), `router-tests.md` (new, 20 intents), `research-pass.md` (50), `cascade-engine.md` (31).
+- `references/agentic-patterns.md` (17), `prompt-optimization.md` (32, +harness/starter pointers), `eval-harness.md` (new), `optimizer-starter.md` (new, incl. interactive ask-loop), `anti-library.md` (new, top 10 failures), `router-tests.md` (new, 20 intents), `web-builder-stacks.md` (new: stacks A/B/C + 7 rules), `research-pass.md` (50), `cascade-engine.md` (31).
 - `MASTER-GUIDELINE.md` (236): friendly wiki with emojis, RAIN/FLOW/AIM-B/DRIVER/Visual Descriptor.
 - `IMPLEMENTATION_PLAN.md` (57): v2, some checkboxes stale (templates/trust/examples marked done in edits).
 

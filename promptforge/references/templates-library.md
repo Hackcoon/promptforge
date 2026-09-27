@@ -50,7 +50,7 @@ Checkpoint: [name]. Sampler/steps/CFG: [values].
 ## T7 Video/3D/Voice/Workflow (one-liners)
 - Video (Sora/Runway/Kling): `[shot + camera move] [subject action] [lighting/grade] [duration/motion intensity]`. Kling: body motion explicit. No image-prompt prose dumps.
 - 3D (Meshy/Tripo): `[low-poly|realistic] [subject] [features] [material/texture] [export GLB/FBX/STL] [A/T-pose if rigged] --no [background, floaters]`.
-- Voice (ElevenLabs): `Emotion:[ ]. Pace:[ ]. Stress:[words]. Pauses:[marks]. Rate:[ ].` No prose descriptions.
+- Voice (ElevenLabs): `Emotion:[ ]. Pace:[ ]. Stress:[words]. Pauses:[marks]. Rate:[ ].` No prose descriptions. Speech-safe: no bullets/bold/headers (reads aloud), 3-4 sentences default, bracket delivery cues color next words.
 - Workflow (Zapier/n8n): `Trigger [app.event] → Step1 [app.action + fields] → Step2 [...] Auth: [assumes connected]. Data passed: [ids].`
 
 ## T8 Decompiler (paste → fix/adapt/split)
