@@ -2,6 +2,16 @@
 
 Keep-a-changelog style. Only user-facing changes (new frameworks, router/output changes, new refs). Fix typo-level edits unlisted.
 
+## [1.3.0] — 2026-09-26
+Gate: router-tests 20/20 PASS (bar 18/20, router untouched since post-prune run).
+### Added
+- Prune pass: PRO→PAR, STAGE→STAR, TRACE→RACE, APE-task→TAG, RTCO→Five-layer (aliases, 0 deletions); APE naming rule (bare APE = optimizer).
+- New `web-builder-stacks.md`: 3 pinned stacks (single-file / TS+Tailwind / vanilla-tokens) + 7 universal rules.
+- Trust hardening: private-corpus-first routing, gate-discovery-then-run-exactly, independent-oracle rule, cite placement.
+- Long-run hygiene: fix-twice-then-hand-back, scratch-out-of-repo, learnings write-back, closed-list defaults, chat-vs-artifact voice.
+- Creator follow-up rule (definitive→zero questions), profile-pack personalization discipline, T7 speech-safe voice, Cursor talk-don't-name lines.
+- README showcase + install guide.
+
 ## [1.2.0] — 2026-09-26
 Gate: router-tests 20/20 PASS (bar 18/20).
 ### Added

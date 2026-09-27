@@ -1,6 +1,6 @@
 # Build Progress — PromptForge Skill (continue-later context)
 
-Date: 2026-09-26 (synced). v1.2.0 on GitHub main (gate 20/20). Finance 6-mode test run passed. Legal-adapter parked for later return.
+Date: 2026-09-26 (synced). v1.3.0 gate passed 20/20, stamp pending push. Finance 6-mode test run passed. Legal-adapter parked for later return.
 
 ## Decisions (don't re-litigate without reason)
 - Core = Immutable 6 [RGCCOV, CAF, QEF, OEF, RAF, TEOF] + Situational 3 [MCF=Build, HILCS=High-Stakes, EFF=Fast guardrail]. First-class: Research Pass, Cascade, Phase-2 verifier, Phase-4 optimizer.

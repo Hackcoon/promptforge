@@ -30,3 +30,4 @@ Also negative checks: simple lookup must NOT route MCF/HILCS/Research; High-Stak
 ## Run history
 - 2026-09-26 (v1.2.0 gate): 20/20 pass (notes: #12 mode borderline Deep/High, framework correct; #19 resolves via coaching picker by design). Negatives hold. Gate: PASS (bar 18/20).
 - 2026-09-26 (post-prune re-run): 20/20 pass, no regressions. Alias probes: "use PRO"→PAR ✅, "use STAGE"→STAR+GCT ✅, "use TRACE"→RACE+example ✅, "use RTCO"→Five-layer ✅, bare "use APE"→ ambiguous (TAG-alias vs Phase-4 optimizer — must disambiguate by context, flagged not failed). Negatives hold. Gate: PASS.
+- 2026-09-26 (v1.3.0 gate): 20/20 pass. Router table untouched since post-prune run (diff: refs + wiki + README only); all intents re-verified against current Router, no deltas. Gate: PASS (bar 18/20).
