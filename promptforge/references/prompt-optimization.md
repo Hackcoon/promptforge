@@ -23,6 +23,8 @@ Treat prompt as searchable artifact against validation set + scoring function. U
 
 Why it matters: Phase 1+2 give good prompt; Phase 4 finds provably better one via metric + validation set.
 
+Naming: bare APE = this optimizer, always. The scaffold "APE-task" (Action/Purpose/Expectation) is aliased to TAG — see construction-frameworks.
+
 Workflow:
 1. Freeze task, metric (binary pass/fail or 1-5 OEF), validation set (20-50 cases min). See `eval-harness.md` for set + metric templates + worked example.
 2. Start from RGCCOV baseline + 2-5 few-shots.
