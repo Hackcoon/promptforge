@@ -2,6 +2,14 @@
 
 Keep-a-changelog style. Only user-facing changes (new frameworks, router/output changes, new refs). Fix typo-level edits unlisted.
 
+## [Unreleased]
+### Added
+- Assumption lens (Value/Usability/Viability/Feasibility + 4 new-product risks, Impact×Evidence sort) → `product-pack.md`.
+- Stakeholder Map (Power×Interest quadrants with per-quadrant comms + veto/yes-line fields) → `applied-frameworks.md`.
+- Dummy-data seeding for eval sets (named dirt classes, synthetic labeling, ≥1 real case rule) → `eval-harness.md`.
+- Tigers / Paper Tigers / Elephants risk sort → `cascade-engine.md` pre-mortem.
+- `scripts/validate.sh` — automated release gate: orphans, broken links, version match, wiki drift, core budget, router set size, literal secrets. Wired into Governance + CONTINUE protocol.
+
 ## [1.4.0] — 2026-09-26
 Gate: router-tests 25/25 PASS (bar 23/25) · 0 orphans · 0 broken links · wiki mirrored.
 ### Fixed

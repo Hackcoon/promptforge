@@ -13,6 +13,16 @@ Picker: personal → Eisenhower. Quick → ICE. Scale/rigor → RICE. Customer p
 ## 2. Opportunity Solution Tree (Torres)
 One outcome → opportunities → solutions → experiments. Outcome = single measurable metric. Opportunities = customer "I struggle…" (never features). 3+ solutions per opportunity (trio: PM+Designer+Engineer). Experiments = fast/cheap, skin-in-game over opinions. Loop weekly; kill unvalidated branches. Never let customers design solutions.
 
+## 2b. Assumption lens (sort before you test)
+QEF surfaces rivals; this sorts them. Every solution carries four risk classes — name the assumption in each before designing experiments:
+- **Value** — will they want it? (biggest killer, test first)
+- **Usability** — can they figure it out?
+- **Viability** — does it work for the business (cost, legal, channel, support)?
+- **Feasibility** — can we actually build it with what we have?
+New products add four more: go-to-market, strategy fit, team, timing.
+Then plot **Impact × Evidence**: high impact + weak evidence = test now (that's your experiment queue, top-left). High impact + strong evidence = proceed. Low impact = don't spend a test on it, whatever your gut says.
+Anti: testing feasibility first because it's the comfortable one — engineers can usually build it; the question is whether anyone wants it. Combine: feeds red-team (§3) kill-assumptions and OST experiments.
+
 ## 3. Red-Team (attack before reality does — NOT a pre-mortem)
 Pre-mortem narrates a dead plan; red-team attacks live assumptions while testable.
 1. Extract claims; keep load-bearing only (if false, plan dies). 2. Steelman each, then attack the steelman. 3. Write "Fails if ___" — concrete, falsifiable. 4. Rank by impact × likelihood × cheapness-to-test; top = test this week. 5. Self-refute: sound claims get credit, no manufactured doubt.

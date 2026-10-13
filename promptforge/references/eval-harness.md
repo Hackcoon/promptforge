@@ -31,3 +31,9 @@ Split: **dev** (tune on this, ~70%) / **held-out** (judge winner once, ~30%). Tu
 - ex-04 ambiguous ("summarize") → default monthly-by-category + state assumption.
 - ex-05 500-row file → same shape, no truncation without note.
 Baseline 3/5 → add ICIO input contract + OOF lock → 5/5 dev → 4/5 held-out (new edge: duplicate rows) → add dedupe rule → 5/5.
+
+## 5. Seeding cases with dummy data (when you can't paste real data)
+Real data is better. Use synthetic only when real is sensitive, unavailable, or you need an edge case reality hasn't produced yet.
+Generate per case: `[N] rows of [CSV/JSON/SQL] for [domain], columns [names+types], with [X]% dirty rows` — and name the dirt explicitly: missing required field · wrong type (text in amount) · out-of-range (negative price, 02/30 date) · duplicate ID · encoding junk · empty file · one-row file · 10k-row file.
+Rules: realistic distributions (not every value unique, not all identical) · plausible names/IDs, never real PII · label files synthetic so they can't leak into production · pin a seed so the set is reproducible · never let synthetic data be the only evidence a prompt works — keep ≥1 real case per set.
+Doubles as few-shot material: one dirty-row example inside the prompt teaches the rejection format better than describing it.

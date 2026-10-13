@@ -39,7 +39,7 @@ Date: 2026-09-26 (synced). v1.4.0 live on GitHub (gate 25/25, 0 orphans, tagged 
 - Finance app test: MCF+GCT+RGCCOV prompt delivered for opencode/muse-spark; user testing, parked.
 
 ## To continue (highest value first) — refreshed
-1. **Take-5 remainder (next up):** assumption lens (V/U/V/F + Impact×Risk) → product-pack; stakeholder map (Power×Interest) → applied; dummy-dataset seeding → eval-harness; Tigers/Paper-Tigers/Elephants sort → cascade; validation script (orphan + version + link check) → CI.
+1. **Stamp v1.5.0:** Unreleased holds take-5 (assumption lens, stakeholder map, dummy-data seeding, Tigers sort, validate.sh). `./scripts/validate.sh` passes 7/7 — ready.
 2. **Tool coverage matrix:** which templates tested where (opencode ✅, rest unverified).
 3. **Optimizer demo:** run OPRO on one real task, publish before/after scores.
 4. **Contribution template:** pre-formatted intake for future content drops.

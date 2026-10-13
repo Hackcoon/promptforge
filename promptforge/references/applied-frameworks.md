@@ -84,7 +84,18 @@ When: correctness matters. Template: `Spec:[contract]. Tests:[failing-first case
 Good: `Spec: xlsx dates ISO only. Tests: 02/30/2026 rejected, empty amount rejected. Implement: validator fn. Verify: pytest -q 3x.`
 Bad: tests after code as decoration → write first. Combine: OEF gate per step.
 
-Signal cheat: writing/persuasion → PAS/AIDA. Product explain → FAB. Proof → GOAT/CARE. Story → ABT. Code → SPARC/spec-and-test. Messy idea → Brain-Dump Elicitation below. Then wrap in RGCCOV-O + TEOF tier. Use these inside Output contract when task is writing, coding, or productivity-specific. Combine with RGCCOV or CAF as wrapper.
+## Stakeholder Map — Many Audiences, One Change (pm-skills-inspired)
+
+When: a prompt's output lands on 3+ people with different power and interest — exec approvals, cross-team launches, migrations, anything political. Why distinct: TRACI/CO-STAR tune for *one* reader; this plans all of them. Trigger: "stakeholder map", "who needs to know".
+Grid — plot each person on **Power** (can they block or unblock?) × **Interest** (do they care about the outcome?):
+- **High power + high interest → Manage closely.** Co-design, pre-brief before anything public, give them the decision packet (HILCS).
+- **High power + low interest → Keep satisfied.** One-pager only, no process detail. Flag only what changes their risk or budget. T9 One-Page Brief is the right shape.
+- **Low power + high interest → Keep informed.** Regular updates, invite feedback, use them as early testers. They become your advocates.
+- **Low power + low interest → Monitor.** Broadcast channel, no 1:1 time. Re-check when scope grows.
+Per stakeholder record: what they want · what they fear · what they'd veto · the one line that gets a yes.
+Anti: same message to all four quadrants (execs drown, contributors feel managed); plotting by job title instead of actual veto power. Combine: HILCS (who approves), T9 (exec cut), 4-Sentence (the yes line).
+
+Signal cheat: writing/persuasion → PAS/AIDA. Product explain → FAB. Proof → GOAT/CARE. Story → ABT. Code → SPARC/spec-and-test. Messy idea → Brain-Dump Elicitation. Many audiences → Stakeholder Map. Then wrap in RGCCOV-O + TEOF tier. Use these inside Output contract when task is writing, coding, or productivity-specific. Combine with RGCCOV or CAF as wrapper.
 
 ## Brain-Dump Elicitation — Messy Notes → Spec (user-supplied pattern)
 

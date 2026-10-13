@@ -27,8 +27,8 @@ You are continuing the `promptforge` skill build. Keep it dense but executable. 
 After each completed task:
 1. `BUILD_PROGRESS.md`: update Date line if big, move file under Built with new line count (`wc -l`), move terms Resolved/Parked, reorder "To continue", append decision if one was made.
 2. `IMPLEMENTATION_PLAN.md`: flip matching checkbox [ ]→[x], refresh "Current state" counts, move next priority to top of §1.
-3. Verify: `SKILL.md` still ~370 lines (pointers only), wiki mirrored if user-facing, no unresolved references to files that don't exist.
+3. **Run `./scripts/validate.sh`** — 7 checks (orphans, broken links, version match, wiki drift, budget, router size, secrets). Must exit 0. Fix failures before claiming done.
 4. Reply short: what changed (files + lines), what's next (1 line), Compass table per skill contract.
 
 ## Done = verified
-- Router still picks smallest effective; suggestions-first output intact; High-Stakes fails closed; no new Immutable without user approval.
+- `scripts/validate.sh` exits 0 · router-tests ≥23/25 · router still picks smallest effective · suggestions-first output intact · High-Stakes fails closed · no new Immutable without user approval.
