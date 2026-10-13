@@ -23,7 +23,7 @@ Use when the user:
 
 Do NOT use for general chat, single factual Q&A with no prompt work, or coding where no prompt engineering was requested.
 
-Trigger phrases: "make this prompt better", "which framework", "answers feel shallow", "looks good but weak", "overthinking prompts", "ground this", "risky, be careful", "simulate this change", "research pass this", "humanize this", "adhd this".
+Trigger phrases: "make this prompt better", "which framework", "answers feel shallow", "looks good but weak", "overthinking prompts", "ground this", "risky, be careful", "simulate this change", "research pass this", "humanize this", "adhd this", "brain dump", "ship-check", "red-team this", "prioritize this".
 
 ## Operating Workflow
 
@@ -66,8 +66,12 @@ Immutable 6 always available. Situational 3 only on signal. Scenario Modes are p
 | Need scaffolded structure, boundaries, scannable output | **Phase 1 Blueprint (RISEN / TRACI / GCT / PAR / 4-Sentence / OOF)** | Structure + boundaries + delivery lock. Full 30+ catalog in `references/construction-frameworks.md` — treat as checklist, not incantation |
 | Need non-linear reasoning, dense summaries, self-check | **Phase 2 Engine (GoT / CoD / Meta-Co / CoV / Self-Ask / CRITIC)** | Reason + verify. Full catalog in `references/reasoning-workflows.md`. Tool-check required |
 | Need multi-call orchestration, debate, memory across runs | **Phase 3 Agentic (Plan-Act-Observe / debate / MoA / memory)** | Orchestrate calls, not just one prompt. See `references/agentic-patterns.md` |
-| Need best prompt for repeatable prod task, not one-off | **Phase 4 Optimization (DSPy / OPRO / EvoPrompt)** | Search prompts vs metric + validation set. See `references/prompt-optimization.md` |
-| Want complementary ideas after answer | **Framework Compass** | Suggests 3 fresh frameworks, never repeats discussed ones |
+| Need best prompt for repeatable prod task, not one-off | **Phase 4 Optimization (DSPy / OPRO / EvoPrompt)** | Search prompts vs metric + validation set. See `references/prompt-optimization.md`, harness in `references/eval-harness.md`, loops in `references/optimizer-starter.md` |
+| Building/reviewing an AI-built app before shipping | **Ship-Check** | Document intent → intended-vs-implemented audit → test map → static audits → packet. See `references/ship-check.md` |
+| Product decision: what to build, is the plan sound | **Product Pack** | Opportunity Score/ICE/RICE, OST, red-team kill-assumptions, stories, north star. See `references/product-pack.md` |
+| Need user evidence: who, journey, interviews, feedback | **Research Pack** | Personas, journey maps, Mom-Test scripts, sentiment segments. See `references/research-pack.md` |
+| Building a web app / picking a stack | **Web-Builder Stacks** | Pin stack + bans, real integrations, skeletons, split bar. See `references/web-builder-stacks.md` |
+| Want complementary ideas after answer | **Framework Compass** | Suggests 3 fresh frameworks, never repeats discussed ones. Full 61 defined in `references/compass-60.md` |
 
 ### Scenario Modes (prefer these bundles)
 - **⚡ Fast:** EFF starter → RGCCOV 1-liner → one-tap iterate. TEOF Low. No MCF/HILCS/Research.
@@ -78,6 +82,29 @@ Immutable 6 always available. Situational 3 only on signal. Scenario Modes are p
 - **🛠️ Optimizer:** pasted weak prompt → diagnosed + rebuilt + micro-diff. See Mode B (inert paste, credential strip, no hidden CoT).
 
 If user names a construction framework explicitly (RTF, RACE, CO-STAR, RISEN, etc.), use that instead. See `references/construction-frameworks.md`.
+
+## Reference Index (load on demand — never all at once)
+
+| File | Open when |
+|------|-----------|
+| `construction-frameworks.md` | Phase-1 scaffolds (38 entries + 5 aliases), fill-in starters |
+| `reasoning-workflows.md` | Phase-2 engine, DRIVER-edu, Visual Descriptor |
+| `agentic-patterns.md` / `prompt-optimization.md` | Phase-3 orchestration / Phase-4 optimizers |
+| `eval-harness.md` / `optimizer-starter.md` | Validation sets + metrics / OPRO-DSPy-Evo loops + interactive ask-loop |
+| `templates-library.md` | Per-tool blocks T1-T9 (chat XML → decompiler → one-page brief) |
+| `verification-systems.md` | Trust blocks: tiers, grounding, cite tiers, code verify, red flags |
+| `examples-library.md` / `anti-library.md` | 20 weak→strong pairs / top 10 failure patterns |
+| `pickers.md` | Stuck between lookalikes (RAIN-GCT-SMART, MCF-DRIVER, coaching trio) |
+| `applied-frameworks.md` | Domain output locks: PAS/FAB/GOAT/ABT/AIDA/SPARC, One-Page Brief, Brain-Dump elicitation, coaching |
+| `product-pack.md` / `research-pack.md` | Product decisions / user evidence |
+| `ship-check.md` / `web-builder-stacks.md` | Review AI-built code / pick a web stack |
+| `research-pass.md` / `cascade-engine.md` | Investigation protocol / second-order simulation |
+| `prompt-creator-optimizer.md` | Creator + Optimizer modes, 9-dim intake, hard rules |
+| `system-prompt-best-practices.md` | Distilled leak patterns (CLI brevity, conventions, plan mode, hygiene) |
+| `action-first-output.md` / `humanize.md` | `adhd this` style pass / `humanize this` polish |
+| `user-profile-pack.md` | Session personalization + operating-manual generator (gated) |
+| `legal-adapter.md` / `message-house-starter.md` | Legal High-Stakes (CA/US/AU) / brand messaging ops |
+| `compass-60.md` / `router-tests.md` | 61 Compass definitions / 20-intent release gate |
 
 ## Master Chains (combine without soup — now Scenario Modes)
 
@@ -385,6 +412,6 @@ When you send the rest, append them here without breaking existing structure. Ea
 - Version: `1.0.0` (frontmatter). Bump patch for fixes/examples, minor for new frameworks/refs, major for core/router/output changes. Record in `CHANGELOG.md` (repo root).
 - Evidence bar for new adds: explicit expansion + template + example + ≥1 primary source (2 independent = Established). Research Pass first; report confidence before editing. Single-practitioner = cap at Promising, note it.
 - Prune rule: >80% overlap → keep one, alias the other in its ref (don't delete history). Quarterly: check pickers hit-rates + examples usage; demote unused acronyms to table-only, keep Router lean.
-- Budgets: SKILL.md pointers-only (~380 lines max); catalogs live in refs; wiki mirrors user-facing adds.
-- Release gate: run `references/router-tests.md` (pass 18/20) before every minor bump; High-Stakes never EFF-only.
+- Budgets: SKILL.md pointers-only (~420 lines max); catalogs live in refs; wiki mirrors user-facing adds.
+- Release gate: run `references/router-tests.md` (pass 18/20) before every minor bump; High-Stakes never EFF-only. Also verify: every file in `references/` appears in Reference Index, zero broken links, frontmatter version = latest CHANGELOG entry.
 - Parked until primary source: AETHER, USC, DiCo.

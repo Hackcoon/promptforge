@@ -84,4 +84,14 @@ When: correctness matters. Template: `Spec:[contract]. Tests:[failing-first case
 Good: `Spec: xlsx dates ISO only. Tests: 02/30/2026 rejected, empty amount rejected. Implement: validator fn. Verify: pytest -q 3x.`
 Bad: tests after code as decoration → write first. Combine: OEF gate per step.
 
-Signal cheat: writing/persuasion → PAS/AIDA. Product explain → FAB. Proof → GOAT/CARE. Story → ABT. Code → SPARC/spec-and-test. Then wrap in RGCCOV-O + TEOF tier. Use these inside Output contract when task is writing, coding, or productivity-specific. Combine with RGCCOV or CAF as wrapper.
+Signal cheat: writing/persuasion → PAS/AIDA. Product explain → FAB. Proof → GOAT/CARE. Story → ABT. Code → SPARC/spec-and-test. Messy idea → Brain-Dump Elicitation below. Then wrap in RGCCOV-O + TEOF tier. Use these inside Output contract when task is writing, coding, or productivity-specific. Combine with RGCCOV or CAF as wrapper.
+
+## Brain-Dump Elicitation — Messy Notes → Spec (user-supplied pattern)
+
+When: user pastes raw unstructured notes and wants a spec (PRD or otherwise) via conversation. Why distinct from Creator/GIST-first: those take one pass (≤3Qs → build); this *stays*, interrogating section by section until decision-complete. Trigger: "brain dump", "PRD this".
+- Intake: `--- BRAINDUMP START --- [paste] --- BRAINDUMP END ---` + product type + known constraints (or [unknown]).
+- Loop: analyze dump → ask 1-3 targeted questions (bullets, concise) → cross-reference all answers for contradictions/gaps → state assumptions explicitly, ask validation → push quantification (metrics/numbers for goals) + perspectives (user types, edge cases).
+- **Confirmation gate (the load-bearing rule):** before shifting sections, proposing requirement wording, or locking an interpretation — state next step/understanding in 1 line and ask confirmation. ("Covered goals; move to user stories?" / "Requirement = [paraphrase]. Accurate?") Never silently advance.
+- Stop: coverage complete + user confirms → draft in target structure only then.
+- PRD structure lock: Overview → Goals (SMART) → Audience/Personas → User stories → Functional → Non-functional (perf/security/usability) → Design notes → Success metrics → Open questions.
+- Anti: writing the doc too early (prompt says don't — enforce it); question floods (>3/round) → batch patience dies; scope drift into non-requirements → ignore per brief. Combine: MCF (section gates) + QEF (first questions) + OEF (judge draft).
