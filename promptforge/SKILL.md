@@ -413,5 +413,5 @@ When you send the rest, append them here without breaking existing structure. Ea
 - Evidence bar for new adds: explicit expansion + template + example + ≥1 primary source (2 independent = Established). Research Pass first; report confidence before editing. Single-practitioner = cap at Promising, note it.
 - Prune rule: >80% overlap → keep one, alias the other in its ref (don't delete history). Quarterly: check pickers hit-rates + examples usage; demote unused acronyms to table-only, keep Router lean.
 - Budgets: SKILL.md pointers-only (~420 lines max); catalogs live in refs; wiki mirrors user-facing adds.
-- Release gate: run `references/router-tests.md` (pass 18/20) before every minor bump; High-Stakes never EFF-only. Also verify: every file in `references/` appears in Reference Index, zero broken links, frontmatter version = latest CHANGELOG entry.
+- Release gate: run `references/router-tests.md` (pass 23/25) before every minor bump; High-Stakes never EFF-only. Also verify: every file in `references/` appears in Reference Index, zero broken links, frontmatter version = latest CHANGELOG entry, wiki mirrors new user-facing capabilities.
 - Parked until primary source: AETHER, USC, DiCo.

@@ -1,5 +1,7 @@
 # Examples Library — 20 Weak → Strong (with mode + suggested frameworks)
 
+Trigger: "show me examples", "what does good look like", or any time a user's ask closely matches a listed case — lift the Strong block and adapt. Failure patterns live in `anti-library.md`.
+
 Format per item: Mode | Weak (what user typed) | Strong (paste-ready, condensed) | Kept/Fixed/Added + frameworks. All Strong blocks assume Suggested-header shown in answer; here we show block only for space.
 
 ## ⚡ Fast (1-5)

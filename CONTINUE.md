@@ -10,14 +10,12 @@ You are continuing the `promptforge` skill build. Keep it dense but executable. 
 5. Only the ref(s) you're touching. Never load all refs at once.
 
 ## File map (purpose, edit rules)
-- `SKILL.md` — core only: router, modes, output contract, quality bar. Keep ~370 lines. Touch only for pointers/tiers, never paste catalogs here.
-- `references/construction-frameworks.md` — Phase-1 dense catalog (34). New acronyms go here with When/Template/Example/Anti-pattern.
-- `references/reasoning-workflows.md` — Phase-2 + DRIVER-edu + Visual Descriptor adapter + reject list.
-- `references/applied-frameworks.md` — domain patterns (coaching, legal row, writing/coding). New domain frameworks go here, never Phase-1.
-- `references/compass-60.md` — all 61 defined. Never invent expansions.
-- `references/templates-library.md` (T1-T8), `prompt-creator-optimizer.md` (Creator/Optimizer), `verification-systems.md` (trust blocks), `examples-library.md` (20), `system-prompt-best-practices.md`, `user-profile-pack.md` (optional extra), `message-house-starter.md` (minimal), `legal-adapter.md` (parked — touch only when user returns).
-- `MASTER-GUIDELINE.md` — friendly wiki. Mirror user-facing adds here in plain language + emoji.
-- `BUILD_PROGRESS.md` + `IMPLEMENTATION_PLAN.md` — you MUST keep both updated (see below).
+- `SKILL.md` — core only: router, Reference Index, modes, output contract, quality bar, governance. Keep ≤420 lines. Touch only for pointers/tiers/new capability rows, never paste catalogs here.
+- **Full ref list + when to open each: see the Reference Index table inside `SKILL.md`.** It is the source of truth; if you add a ref, add its row there or the file is orphaned (an AI will never load it).
+- Edit rules by type: new acronym → `construction-frameworks.md`. New process → `reasoning-workflows.md`. New domain pattern → `applied-frameworks.md`. New tool block → `templates-library.md`. New verification → `verification-systems.md`. Packs (`product-pack`, `research-pack`, `ship-check`, `web-builder-stacks`) are self-contained — extend in place.
+- `legal-adapter.md` parked (touch only when user returns). `message-house-starter.md` minimal by request.
+- `MASTER-GUIDELINE.md` — friendly wiki. Mirror user-facing adds here in plain language + emoji (Packs & Kits table). Gate checks this.
+- `BUILD_PROGRESS.md` + `IMPLEMENTATION_PLAN.md` + `CHANGELOG.md` — you MUST keep updated (see below).
 
 ## Before adding any framework (Research Pass, mandatory)
 1. Web-search acronym + expansions; need explicit letter-by-letter + template/example or reject.

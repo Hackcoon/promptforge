@@ -1,6 +1,6 @@
-# Router Accuracy Set — 20 Intents (run before every minor bump)
+# Router Accuracy Set — 25 Intents (run before every minor bump)
 
-How: feed each intent, check Mode + primary framework match. Pass = 18/20. Failures → fix Router hint or pickers, not the intent.
+How: feed each intent, check Mode + primary framework match. Pass = 23/25 (92%). Failures → fix Router hint or pickers, not the intent.
 
 | # | Intent (user words) | Expected Mode | Expected primary |
 |---|---------------------|---------------|------------------|
@@ -24,10 +24,16 @@ How: feed each intent, check Mode + primary framework match. Pass = 18/20. Failu
 | 18 | "scope this coding task" | 🏗️ Build | T3 file-anchored |
 | 19 | "coach my report / habit" | 🔍/🚨 per risk | GROW / CLEAR-Coaching / AIM SMART picker |
 | 20 | "which framework for legal?" | 🚨 High | legal-adapter + HILCS |
+| 21 | "is this vibe-coded app safe to ship?" | 🚨 High | ship-check (document → intended-vs-implemented → packet) |
+| 22 | "what should we build next?" | 🔍 Deep | product-pack (OST + Opportunity Score) |
+| 23 | "who are our users / map the journey" | 🔍 Deep | research-pack (personas → journey) |
+| 24 | "build me a web app" | 🏗️ Build | web-builder-stacks (pin stack + bans) + T4 |
+| 25 | "set up evals for this prompt" | 🏗️ Build | eval-harness → optimizer-starter |
 
-Also negative checks: simple lookup must NOT route MCF/HILCS/Research; High-Stakes must NEVER route EFF-only.
+Also negative checks: simple lookup must NOT route MCF/HILCS/Research; High-Stakes must NEVER route EFF-only; ship-check must NEVER greenlight on scanner output alone; research/product packs must NOT run without pasted data (RAF).
 
 ## Run history
 - 2026-09-26 (v1.2.0 gate): 20/20 pass (notes: #12 mode borderline Deep/High, framework correct; #19 resolves via coaching picker by design). Negatives hold. Gate: PASS (bar 18/20).
 - 2026-09-26 (post-prune re-run): 20/20 pass, no regressions. Alias probes: "use PRO"→PAR ✅, "use STAGE"→STAR+GCT ✅, "use TRACE"→RACE+example ✅, "use RTCO"→Five-layer ✅, bare "use APE"→ ambiguous (TAG-alias vs Phase-4 optimizer — must disambiguate by context, flagged not failed). Negatives hold. Gate: PASS.
 - 2026-09-26 (v1.3.0 gate): 20/20 pass. Router table untouched since post-prune run (diff: refs + wiki + README only); all intents re-verified against current Router, no deltas. Gate: PASS (bar 18/20).
+- 2026-09-26 (set expanded to 25): intents 21-25 added for ship-check / product-pack / research-pack / web-stacks / eval-harness — previously untested capabilities. Run: 25/25 pass against new Router rows + Reference Index. Negatives hold (incl. new: no greenlight on scanners, no packs without data). Gate: PASS (bar 23/25).

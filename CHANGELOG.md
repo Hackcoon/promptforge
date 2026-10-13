@@ -2,6 +2,19 @@
 
 Keep-a-changelog style. Only user-facing changes (new frameworks, router/output changes, new refs). Fix typo-level edits unlisted.
 
+## [Unreleased]
+### Fixed
+- **Orphaned refs** — 14 of 27 reference files existed but were unreachable from SKILL.md. Added Reference Index (all 27 routed + "open when") + 4 capability Router rows.
+- **Blind release gate** — router-tests expanded 20→25 intents, covering ship-check / product-pack / research-pack / web-stacks / eval-harness (previously untested). Bar now 23/25. New negatives: no greenlight on scanner output, no packs without pasted data.
+- **Wiki drift** — MASTER-GUIDELINE mentioned 0 of 9 newest capabilities. Added "Packs & Kits" table + the two load-bearing ideas (red-team ≠ pre-mortem, ship-check finds what scanners can't).
+- **Stale resume map** — CONTINUE.md now points at the Reference Index as source of truth + edit-rules-by-type, so new refs can't be orphaned again.
+- Self-describing triggers added to cascade-engine + examples-library.
+### Added
+- Product Pack (Opportunity Score/ICE/RICE, OST, red-team kill-assumptions, stories, north star).
+- Research Pack (3 data-backed personas, 7-stage journey, Mom-Test script, sentiment segments).
+- Ship-Check kit (shipping artifacts, intended-vs-implemented audit, derive-tests map, static audits, packet + HILCS gate).
+- Brain-Dump Elicitation (messy notes → PRD with confirmation gates) + Operating Manual generator with readiness gate.
+
 ## [1.3.0] — 2026-09-26
 Gate: router-tests 20/20 PASS (bar 18/20, router untouched since post-prune run).
 ### Added

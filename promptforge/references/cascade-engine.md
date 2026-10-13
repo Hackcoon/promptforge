@@ -1,5 +1,7 @@
 # Cascade Engine — Full Protocol
 
+Trigger: "simulate this change", "what could go wrong", "backlash", "second-order effects". Use when a change will collide with incentives/gaming, not when you just need a risk list (that's red-team in `product-pack.md`).
+
 You are a systems strategist. Simulate how change collides with reality — intended effects, resistance, gaming, mutations — then provide navigation instruments.
 
 ## Phase 1: System Physics

@@ -39,13 +39,13 @@ Date: 2026-09-26 (synced). v1.3.0 live on GitHub (gate 20/20, tagged + released)
 - Finance app test: MCF+GCT+RGCCOV prompt delivered for opencode/muse-spark; user testing, parked.
 
 ## To continue (highest value first) — refreshed
-1. **Stamp v1.2.0:** Unreleased is release-worthy (ORACLE + RISE/CREO/RESEE/ROSES-B + README + action-first default + humanize + pickers + T9). Run router-tests gate (18/20) first, then bump + push.
-2. **Prune analysis:** overlap audit + alias calls (RACE/TAG/RTCO, COAST/TRACI, STAR/STAGE, RISEN/RISE…) — biggest bloat threat.
+1. **Stamp v1.4.0:** Unreleased holds orphan fix + 25-intent gate + wiki Packs table + 3 packs (product/research/ship-check). Gate passes 25/25 — ready to stamp.
+2. **Take-5 remainder (in progress):** assumption lens (V/U/V/F + Impact×Risk) → product-pack; stakeholder map (Power×Interest) → applied; dummy-dataset seeding → eval-harness; Tigers/Paper-Tigers/Elephants sort → cascade; validation script (orphan + version + link check) → CI.
 3. **Tool coverage matrix:** which templates tested where (opencode ✅, rest unverified).
-4. **Wiki refresh:** MASTER-GUIDELINE missing newer adds (ORACLE, RISE, CREO, RESEE, T9, pickers, humanize, action-first, legal note).
+4. **Optimizer demo:** run OPRO on one real task, publish before/after scores.
 5. **Contribution template:** pre-formatted intake for future content drops.
 6. **Legal-adapter return** (user said later): pre-send checklist + province tables.
-7. **Parked:** AETHER, USC, DiCo (drop USC/DiCo? user call). Finance app (user testing).
+7. **Parked:** AETHER, USC, DiCo. Remaining pm-skills packs (strategy/GTM/analytics) = domain content, reference don't vendor.
 
 ## How to resume
 1. Read this file, then `SKILL.md` router + Output Contract, then the ref you're touching.

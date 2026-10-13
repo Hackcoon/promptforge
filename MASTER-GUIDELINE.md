@@ -184,7 +184,6 @@ Always add HILCS gates + OEF judging for High risk.
 ---
 
 ## 🧪 Phase 4 — Auto-Optimization (stop hand-tuning!)
-
 For tasks you repeat. Let computer search for best prompt vs a score!
 
 - **🐵 APE:** Generate candidates, test on validation set, keep winners. The original!
@@ -209,6 +208,28 @@ Quick (fact) → Targeted (decision) → Full (strategic, costly if wrong). Alwa
 2. Three Futures (150-200 words each): Intended, Backlash (Cobra effect!), Mutation. Probable/Possible/Edge — no fake %.
 3. Stress: Reversibility 0-10, time-lag trap, concentration risk, pre-mortem.
 4. Command: early warning 0-6mo, point of no return, no-regrets move, amplifier, kill switch.
+
+---
+
+## 🧰 Packs & Kits — say the word, get the workflow
+
+Newer capabilities. Each is one file, loaded only when you ask.
+
+| Say this | You get | Lives in |
+|---|---|---|
+| **"prioritize this"** / **"red-team this"** | Opportunity Score · ICE · RICE · OST tree · kill-assumptions with cheapest test · user stories · north star | `product-pack.md` |
+| **"personas"** / **"journey map"** / **"interview script"** | 3 data-backed personas · 7-stage journey w/ aha + churn triggers · Mom-Test script · sentiment segments | `research-pack.md` |
+| **"ship-check"** | Document a vibe-coded app → intended-vs-implemented audit → test map → static security/perf → ship packet | `ship-check.md` |
+| **"build a web app"** | 3 pinned stacks (single-file · TS+Tailwind · vanilla-tokens) + 7 rules: no mocks, skeletons, split bar, SEO | `web-builder-stacks.md` |
+| **"brain dump"** | Messy notes → section-by-section interrogation → PRD, with confirmation gates | `applied-frameworks.md` |
+| **"which template"** | T1–T9: chat XML · lean/reasoning · agentic file-anchored · anti-bloat generator · image + edit · ComfyUI · video/3D/voice · decompiler · one-page brief | `templates-library.md` |
+| **"show me examples"** | 20 weak→strong pairs across all modes + top 10 failure patterns with fixes | `examples-library.md` · `anti-library.md` |
+| **"set up evals"** | Validation set template · metric library · run procedure · OPRO/DSPy/Evo loops · interactive ask-loop | `eval-harness.md` · `optimizer-starter.md` |
+| **"which one do I use?"** | 3 pickers: RAIN/GCT/SMART · MCF/DRIVER · GROW/CLEAR/AIM SMART | `pickers.md` |
+
+🔑 Two load-bearing ideas worth knowing even if you never open the files:
+- **Red-team ≠ pre-mortem.** Pre-mortem narrates a dead plan; red-team attacks live assumptions while they're still cheap to test. Rank by impact × likelihood × cheapness, test the top one this week.
+- **Ship-check finds what scanners can't.** Linters check code against itself. The expensive bugs live in the gap between what the docs say and what the code does — which needs intent written down first.
 
 ---
 
