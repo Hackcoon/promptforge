@@ -1,6 +1,6 @@
 # PromptForge 🔥
 
-Diagnose what you actually need, pick the smallest effective prompt framework, get a paste-ready prompt that works first try. v1.2.0. No theory dumps. No framework soup.
+Diagnose what you actually need, pick the smallest effective prompt framework, get a paste-ready prompt that works first try. v1.4.0. No theory dumps. No framework soup.
 
 ## Showcase — weak in, paste-ready out
 

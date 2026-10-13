@@ -1,6 +1,6 @@
 # Build Progress — PromptForge Skill (continue-later context)
 
-Date: 2026-09-26 (synced). v1.3.0 live on GitHub (gate 20/20, tagged + released). Finance 6-mode test run passed. Legal-adapter parked for later return.
+Date: 2026-09-26 (synced). v1.4.0 live on GitHub (gate 25/25, 0 orphans, tagged + released). Finance 6-mode test run passed. Legal-adapter parked for later return.
 
 ## Decisions (don't re-litigate without reason)
 - Core = Immutable 6 [RGCCOV, CAF, QEF, OEF, RAF, TEOF] + Situational 3 [MCF=Build, HILCS=High-Stakes, EFF=Fast guardrail]. First-class: Research Pass, Cascade, Phase-2 verifier, Phase-4 optimizer.
@@ -39,13 +39,12 @@ Date: 2026-09-26 (synced). v1.3.0 live on GitHub (gate 20/20, tagged + released)
 - Finance app test: MCF+GCT+RGCCOV prompt delivered for opencode/muse-spark; user testing, parked.
 
 ## To continue (highest value first) — refreshed
-1. **Stamp v1.4.0:** Unreleased holds orphan fix + 25-intent gate + wiki Packs table + 3 packs (product/research/ship-check). Gate passes 25/25 — ready to stamp.
-2. **Take-5 remainder (in progress):** assumption lens (V/U/V/F + Impact×Risk) → product-pack; stakeholder map (Power×Interest) → applied; dummy-dataset seeding → eval-harness; Tigers/Paper-Tigers/Elephants sort → cascade; validation script (orphan + version + link check) → CI.
-3. **Tool coverage matrix:** which templates tested where (opencode ✅, rest unverified).
-4. **Optimizer demo:** run OPRO on one real task, publish before/after scores.
-5. **Contribution template:** pre-formatted intake for future content drops.
-6. **Legal-adapter return** (user said later): pre-send checklist + province tables.
-7. **Parked:** AETHER, USC, DiCo. Remaining pm-skills packs (strategy/GTM/analytics) = domain content, reference don't vendor.
+1. **Take-5 remainder (next up):** assumption lens (V/U/V/F + Impact×Risk) → product-pack; stakeholder map (Power×Interest) → applied; dummy-dataset seeding → eval-harness; Tigers/Paper-Tigers/Elephants sort → cascade; validation script (orphan + version + link check) → CI.
+2. **Tool coverage matrix:** which templates tested where (opencode ✅, rest unverified).
+3. **Optimizer demo:** run OPRO on one real task, publish before/after scores.
+4. **Contribution template:** pre-formatted intake for future content drops.
+5. **Legal-adapter return** (user said later): pre-send checklist + province tables.
+6. **Parked:** AETHER, USC, DiCo. Remaining pm-skills packs (strategy/GTM/analytics) = domain content, reference don't vendor.
 
 ## How to resume
 1. Read this file, then `SKILL.md` router + Output Contract, then the ref you're touching.

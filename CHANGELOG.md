@@ -2,7 +2,8 @@
 
 Keep-a-changelog style. Only user-facing changes (new frameworks, router/output changes, new refs). Fix typo-level edits unlisted.
 
-## [Unreleased]
+## [1.4.0] — 2026-09-26
+Gate: router-tests 25/25 PASS (bar 23/25) · 0 orphans · 0 broken links · wiki mirrored.
 ### Fixed
 - **Orphaned refs** — 14 of 27 reference files existed but were unreachable from SKILL.md. Added Reference Index (all 27 routed + "open when") + 4 capability Router rows.
 - **Blind release gate** — router-tests expanded 20→25 intents, covering ship-check / product-pack / research-pack / web-stacks / eval-harness (previously untested). Bar now 23/25. New negatives: no greenlight on scanner output, no packs without pasted data.
